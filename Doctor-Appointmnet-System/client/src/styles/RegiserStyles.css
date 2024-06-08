@@ -1,0 +1,688 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+.maincontainer {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: flex-start;
+  height: 100%;
+  width: 100%;
+  background-color: #fff;
+}
+h1{
+  text-align: center;
+}
+.form-container {
+ /* position: absolute; */
+  display: flex;
+  margin: 0 10%;
+  align-items: center;
+  justify-content: space-around;
+  height: 100vh;
+  width: 80%;
+  /* background-color: darkgrey; */
+  /* background-image: url("../Images/R.jpg"); */
+  /* You can adjust 'cover' to other values like 'contain' or specify width and height values */
+  background-repeat: no-repeat;
+  /* Prevent the background image from repeating */
+  background-position: center;
+  /* Center the background image */
+
+
+}
+
+.register-form {
+  border: 5px solid rgb(5, 5, 5);
+  padding: 30px;
+  border-radius: 20px;
+  background-color: #888;
+  color: aqua;
+  width: 100%;
+  margin-right: 25%;
+}
+.form-container-right{
+  position: absolute;
+  right: 20%;
+  width: 50%;
+}
+.loginhead {
+  color: antiquewhite;
+}
+
+.gpt3__header-image {
+  flex: .8 1.1;
+  display: flex;
+  /* justify-content: space-around; */
+  align-items: center;
+}
+
+.gpt3__header-image img {
+  
+  width: 60%;
+  height: 40%;
+}
+
+.small-container {
+  max-width: 1080px;
+  margin: auto;
+  padding-left: 10px;
+  padding-right: 10px;
+
+}
+
+.col-4 {
+
+  flex-basis: 25%;
+  padding: 10px;
+  min-width: 200px;
+  margin-bottom: 50px;
+  transition: transform .5s;
+
+}
+
+.col-4 img {
+
+  width: 80%;
+}
+
+.title {
+  /* text-align: center; */
+  margin: 0 auto 80px;
+  position: relative;
+  line-height: 60px;
+  color: #333;
+  font-family: Arial, Helvetica, sans-serif;
+  /* background-color: #3bff58; */
+  /* border: 5px solid rgb(5, 5, 5); */
+
+
+}
+
+.title::after {
+  content: "";
+  background: #666;
+  width: 100%;
+  height: 5px;
+  border-radius: 5px;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%);
+
+
+}
+
+h4 {
+
+  color: #555;
+  font-weight: normal;
+}
+
+.col-4 p {
+
+  font-size: 14
+}
+
+.col-4:hover {
+
+  transform: translateY(-10px);
+}
+
+.row {
+
+  row {
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: calc(-1 * var(--bs-gutter-y));
+    margin-right: calc(-.5 * var(--bs-gutter-x));
+    margin-left: calc(-.5 * var(--bs-gutter-x));
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+
+  }
+}
+
+.articles {
+  background: var(--veryLightGray);
+  padding: 5% 10%;
+}
+
+
+
+.articles h1 {
+  color: var(--darkBlue);
+  font-weight: 300;
+}
+
+.articlesList {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  flex-flow: row nowrap;
+  padding: 30px 0;
+}
+
+.latestArticles {
+  width: 24%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 10px 10px 0 0;
+  background: var(--white);
+  overflow: hidden;
+}
+
+.latestArticles:hover {
+
+  transform: translateY(-10px);
+}
+
+.latestArticles img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 10px 10px 0 0;
+}
+
+.latestArticles div {
+  padding: 20px 25px;
+}
+
+.latestArticles div a {
+  color: var(--darkBlue);
+  font-weight: lighter;
+  font-size: 17px;
+  text-decoration: none;
+}
+
+.latestArticles div a:hover {
+  color: var(--limeGreen);
+}
+
+.authorMuted {
+  color: var(--grayishBlue);
+  font-size: 10px;
+}
+
+.latestArticles .text-muted {
+  line-height: 20px;
+  font-size: 13px;
+  text-align: justify;
+}
+
+
+nav {
+  display: flex;
+  justify-content: center;
+  position: sticky;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+li {
+  margin: 0 15px;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+  /* Set your preferred text color */
+  font-weight: bold;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #ffd700;
+  /* Set your preferred hover color */
+}
+
+/* Navbar.css */
+
+.nav {
+  background-color: #fff;
+  color: #333;
+
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  /* Align logo and nav links at the ends */
+  align-items: center;
+  /* Center vertically */
+}
+
+.logo img {
+  max-height: 50px;
+  /* Adjust the maximum height of the logo */
+}
+
+nav {
+  display: flex;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+li {
+  margin: 0 15px;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #ffd700;
+}
+
+/* Responsive Styles */
+
+@media only screen and (max-width: 768px) {
+  .nav {
+    flex-direction: column;
+    /* Stack items vertically on smaller screens */
+    align-items: flex-start;
+    /* Align items to the left on smaller screens */
+  }
+
+  ul {
+    margin-top: 10px;
+    /* Add margin to the top of the stacked links */
+  }
+}
+
+.footer {
+  padding: 5% 10%;
+  background: linear-gradient(45deg, black, #aba6f0);
+
+}
+
+.footerList {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: stretch;
+  align-content: space-between;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.footerDiv {
+  align-self: stretch;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.footerDiv a {
+  color: white;
+  text-decoration: none;
+  font-weight: strong;
+  font-size: 16px;
+}
+
+.footerDiv a:hover {
+  color: var(--limeGreen);
+}
+
+#link:hover {
+  fill: var(--limeGreen);
+}
+
+.footerDiv:last-child {
+  align-items: flex-end;
+  width: 40%;
+}
+
+.footerDiv:last-child p {
+  margin: 15px 0 0 0;
+  font-size: 14px;
+  color: var(--grayishBlue);
+}
+
+.footerDiv:last-child a {
+  display: inline-block;
+}
+
+.footerDiv svg:first-child {
+  margin: 0 10px 0px 10px;
+}
+
+.socialLinks {
+  margin-top: 40px;
+}
+
+.footerDiv #requestBtn {
+  opacity: 1;
+  color: black;
+  border: 6px solid black;
+  border-radius: 15px;
+  padding: 5px;
+}
+
+
+.footerDiv #requestBtn:hover {
+  background: var(--limeGreen);
+  background: -webkit-linear-gradient(left, var(--limeGreen), var(--brightCyan));
+  background: -o-linear-gradient(right, var(--limeGreen), var(--brightCyan));
+  background: -moz-linear-gradient(right, var(--limeGreen), var(--brightCyan));
+  background: linear-gradient(to right, var(--limeGreen), var(--brightCyan));
+  opacity: 1;
+}
+
+#logoFill {
+  fill: white;
+}
+
+.attribution {
+  font-size: 14px;
+  text-align: center;
+  padding: 20px;
+  color: var(--darkBlue);
+}
+
+.attribution a {
+  color: var(--limeGreen);
+  text-decoration: none;
+}
+
+.attribution a:hover {
+  text-decoration: underline;
+}
+
+
+.testimonial span{
+  color: #333;
+}
+.testimonial p{
+color: #333;
+}
+
+/*********************** Changes for login page  ************************************/
+.nav{
+  /* background-color: aqua; */
+  border-radius: 5px;
+}
+
+.form-container{
+  padding: 0;
+  height: 100%;
+  /* background: linear-gradient(rgb(246, 253, 255),rgb(226, 250, 255),rgb(222, 252, 255)); */
+
+}
+.register-form{
+  background-color: #fff;
+  width: 350px;
+  padding-top: 0;
+  
+}
+.register-form span{
+  font-size: 12px;
+  font-weight: 500;
+  margin-left: 110px;
+}
+.register-form .btn-login{
+  margin: 20px 0;
+  width: 100%;
+}
+.loginhead{
+  color: rgb(4, 214, 214);
+}
+
+.col-4 img{
+  height: 50%;
+}
+
+.small-container{
+  max-width: 1080px;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+.forgot-password{
+  margin: 10% auto;
+  height: 500px;
+  width: 400px;
+}
+
+/*********************** Changes for testimonials page  ************************************/
+.testimonials{
+  /* margin: 50px auto 50px auto; */
+  display: flex;
+  /* flex-direction: column; */
+  align-items: center;
+  /* height: 400px;
+  width: 40%; */
+  color: #333;
+}
+.carousel-image{
+  /* margin: 10% 50%; */
+  height: 200px;width: 200px;
+  object-fit: contain;
+  border-radius: 50%;
+  margin: 0 auto;
+  margin-bottom: 10%;
+  
+}
+.testimonials p{
+  color: black;
+  font-weight: bold;
+  font-style: italic;
+}
+.testimonial-section{
+  text-align: center;
+}
+
+.testimonial-section h1{
+  color: var(--darkBlue);
+  font-weight: 300;
+  margin: 50px;
+}
+
+
+/*  ------------------ */
+
+.gpt3__header-image{
+  display: flex;
+  border-radius: 2px;
+  flex-direction: column;
+}
+.gpt3__header-image img{
+  margin: 20px auto;
+  width: 80%;
+  background-blend-mode: color;
+}
+.upperbox{
+  width: 100%;
+  height: 200px;
+  background-color: rgb(30 249 249);
+  margin: 0 0 0 0;
+  
+  text-align: center;
+  padding: 50px;
+}
+
+a:hover{
+  color: rgb(56, 147, 177);
+  background-color: #eae5e5;
+  border-radius: 5px;
+  padding: 5px;
+
+}
+
+/* register page  */
+.register-page{
+  margin-top: 0;
+  padding-top: 0;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 50px auto;
+  background-color: #e6fffe;
+}
+
+.register-form{
+  margin-right: 0;
+}
+
+/* about us section */
+.about-us{
+  width: 80%;
+  max-width: 1080px;
+  padding: 30px;
+  margin: auto;
+}
+.about-us-container{
+  display: flex;
+  justify-content: space-around;
+}
+.about-us h1{
+  margin-bottom: 10%;
+}
+.left-about-us{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.right-about-us{
+  margin-left: 10%;
+
+}
+.right-about-us p{
+  font-size: medium;
+  font-weight: 400;
+  /* line-height: 1%; */
+}
+.about-us img{
+  width: 400px;
+  height: 400px;
+  
+}
+
+
+/* Responsive Styles */
+
+/* Responsive navigation */
+@media only screen and (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav ul {
+    margin-top: 10px;
+  }
+}
+
+/* Responsive form container */
+@media only screen and (max-width: 768px) {
+  .form-container {
+    flex-direction: column;
+    margin: 0;
+    padding: 0 20px;
+    height: auto;
+  }
+
+  .register-form {
+    margin-right: 0;
+    width: 100%;
+  }
+}
+
+/* Responsive columns */
+@media only screen and (max-width: 768px) {
+  .col-4 {
+    flex-basis: 100%;
+    margin-bottom: 20px; /* Adjust spacing between columns */
+  }
+
+  .col-4 img {
+    width: 100%;
+  }
+}
+
+/* Responsive footer */
+@media only screen and (max-width: 768px) {
+  .footerList {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footerDiv:last-child {
+    width: 100%;
+  }
+}
+
+/* Responsive testimonial section */
+/* @media only screen and (max-width: 768px) {
+  .testimonials {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .carousel-image {
+    height: 150px; /* Adjust image height for smaller screens */
+    /* width: 150px; /* Adjust image width for smaller screens */
+    /* margin-bottom: 20px; Adjust spacing between carousel images */
+  /* } */
+/* } */
+
+
+
+/* Responsive upper box */
+@media only screen and (max-width: 768px) {
+  .upperbox {
+    height: auto;
+    padding: 30px;
+  }
+}
+
+/* Responsive about us section */
+@media only screen and (max-width: 768px) {
+  .about-us-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .right-about-us {
+    margin-left: 0; /* Reset left margin */
+    margin-top: 20px; /* Adjust spacing from the left column */
+    text-align: center;
+  }
+
+  .about-us img {
+    width: 100%; /* Ensure images fill their containers */
+    height: auto;
+  }
+}
+/* Responsive latest articles section */
+@media only screen and (max-width: 768px) {
+  .articlesList {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .latestArticles {
+    width: 90%; /* Adjust width for smaller screens */
+    margin-bottom: 20px; /* Adjust spacing between articles */
+  }
+}

@@ -5,3 +5,7 @@
 
 /Video-Conferencing-App/node_modules
 /Video-Conferencing-App/.env
+
+/Doctor-Appointment-System/node_modules
+/Doctor-Appointment-System/.env
+/Doctor-Appointment-System/client/node_modules
