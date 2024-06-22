@@ -2,13 +2,13 @@ import { getAuth } from "firebase/auth";
 import { initializeApp } from "firebase/app";
 import { collection, getFirestore } from "firebase/firestore";
 const firebaseConfig = {
-  apiKey: "AIzaSyBR0B2t45R2CMtHXcNxRZKlDQS1c_eUUyo",
-  authDomain: "zoom-clone-81749.firebaseapp.com",
-  projectId: "zoom-clone-81749",
-  storageBucket: "zoom-clone-81749.appspot.com",
-  messagingSenderId: "1085903568385",
-  appId: "1:1085903568385:web:5995d5a41eb68380e64a00",
-  measurementId: "G-BL9K6GL4M0"
+  apiKey: process.env.apikey,
+  authDomain: process.env.authDomain,
+  projectId: process.env.projectId,
+  storageBucket: process.env.storageBucket,
+  messagingSenderId: process.env.messagingSenderId,
+  appId: process.env.appId,
+  measurementId: process.env.measurementId
 };
 
 const app = initializeApp(firebaseConfig);
